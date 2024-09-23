@@ -1,10 +1,7 @@
-export const reverseString = (string: string): string => {
-   return string.split("").reverse().join("");
-};
+// A function to reverse the sentence
+export const reverseString = (string: string): string =>
+   string.split("").reverse().join("");
 
-export const countCharacters = (string: string): number => {
-   return string.length;
-};
-
-// export const add = (a,b) => a + b;
-// export const subtract = (a,b) => a - b;
+// A function to count the characters in a sentence
+export const countCharacters = (string: string): number =>
+   string.replace(/\s+/g, "").length;
